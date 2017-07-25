@@ -1,0 +1,314 @@
+AppBundle\Entity\Kurmus01:
+    type: entity
+    table: kurmus01
+    repositoryClass: AppBundle\Repository\KurmusRepository
+    indexes:
+        Musteri_No:
+            columns:
+                - RefNo_Musteri
+        semt:
+            columns:
+                - Semt
+        sehir:
+            columns:
+                - Sehir
+        islem_tipimus:
+            columns:
+                - Islem_Tipi
+        fiyat_nokurmus:
+            columns:
+                - Fiyat_No
+        Musteri_Adi:
+            columns:
+                - Musteri_Adi
+    id:
+        refnoMusteri:
+            type: integer
+            nullable: false
+            options:
+                unsigned: true
+            id: true
+            column: RefNo_Musteri
+            generator:
+                strategy: IDENTITY
+    fields:
+        aktif:
+            type: string
+            nullable: true
+            length: null
+            options:
+                fixed: false
+                default: 'True'
+            column: Aktif
+        hesapTipi:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: M
+            column: Hesap_Tipi
+        musteriAdi:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+            column: Musteri_Adi
+        musteriTipi:
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: Musteri_Tipi
+        islemTipi:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: Islem_Tipi
+        fiyatNo:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: Fiyat_No
+        adres:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+            column: Adres
+        ticariUnvan:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+            column: Ticari_Unvan
+        bolgeNo:
+            type: boolean
+            nullable: true
+            column: Bolge_No
+        postaKodu:
+            type: string
+            nullable: true
+            length: 6
+            options:
+                fixed: false
+            column: Posta_Kodu
+        telefon1:
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: Telefon_1
+        telefon2:
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: Telefon_2
+        telefon3:
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: Telefon_3
+        fax:
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: Fax
+        gsm:
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: GSM
+        eMail:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+            column: E_Mail
+        eMail2:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+            column: E_Mail_2
+        vergiDairesi:
+            type: string
+            nullable: true
+            length: 30
+            options:
+                fixed: false
+            column: Vergi_Dairesi
+        vergiNo:
+            type: string
+            nullable: true
+            length: 30
+            options:
+                fixed: false
+            column: Vergi_No
+        sozlesmeBitisTarihi:
+            type: date
+            nullable: true
+            column: Sozlesme_Bitis_Tarihi
+        mailKontrol:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: H
+            column: Mail_Kontrol
+        beklemeKontrol:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: H
+            column: Bekleme_Kontrol
+        webUsername:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+            column: Web_UserName
+        webPassword:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+            column: Web_Password
+        kopruKontrol:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: H
+            column: Kopru_Kontrol
+        iskontoorani:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: IskontoOrani
+        gf:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: '0'
+            column: GF
+        gfP:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: H
+            column: GF_P
+        kayitbildirimi:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: H
+            column: KayitBildirimi
+        pesinkopruucreti:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: PesinKopruUcreti
+        abonekopruucreti:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: AboneKopruUcreti
+        karaliste:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: H
+            column: KaraListe
+        ekstralptal:
+            type: string
+            nullable: true
+            length: null
+            options:
+                fixed: false
+                default: 'False'
+            column: Ekstralptal
+        onaykodu:
+            type: string
+            nullable: true
+            length: 60
+            options:
+                fixed: false
+        f1Not:
+            type: string
+            nullable: true
+            length: 500
+            options:
+                fixed: false
+            column: F1_Not
+        smsKontrol:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: H
+            column: Sms_Kontrol
+        musteriYetkisi:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '0'
+            column: musteri_yetkisi
+    manyToOne:
+        sehir:
+            targetEntity: City
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                Sehir:
+                    referencedColumnName: id
+            orphanRemoval: false
+        semt:
+            targetEntity: Kursmt01
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                Semt:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

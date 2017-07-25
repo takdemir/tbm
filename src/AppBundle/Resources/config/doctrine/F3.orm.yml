@@ -1,0 +1,112 @@
+AppBundle\Entity\F3:
+    type: entity
+    table: f3
+    indexes:
+        islemf3:
+            columns:
+                - islem_tipi
+        musteriIdf3:
+            columns:
+                - musteriID
+        semtf3:
+            columns:
+                - semt
+        yetkilif3:
+            columns:
+                - yetkili
+        fiyat_nof3:
+            columns:
+                - fiyat_no
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        musteriadi:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: musteriAdi
+        adres:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+        tel:
+            type: string
+            nullable: true
+            length: 15
+            options:
+                fixed: false
+        ceptel:
+            type: string
+            nullable: true
+            length: 15
+            options:
+                fixed: false
+        nots:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+    manyToOne:
+        fiyatNo:
+            targetEntity: Kurftg01
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                fiyat_no:
+                    referencedColumnName: Fiyat_No
+            orphanRemoval: false
+        islemTipi:
+            targetEntity: Kurtip01
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                islem_tipi:
+                    referencedColumnName: id
+            orphanRemoval: false
+        musteriid:
+            targetEntity: Kurmus01
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                musteriID:
+                    referencedColumnName: RefNo_Musteri
+            orphanRemoval: false
+        semt:
+            targetEntity: Kursmt01
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                semt:
+                    referencedColumnName: id
+            orphanRemoval: false
+        yetkili:
+            targetEntity: Kurmus02
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                yetkili:
+                    referencedColumnName: RefNo
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,56 @@
+AppBundle\Entity\Log:
+    type: entity
+    table: log
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+        tableid:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: tableId
+    fields:
+        adminid:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: adminId
+        tablename:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: tableName
+        loglevel:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: logLevel
+        logmessage:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: logMessage
+        cdate:
+            type: datetime
+            nullable: true
+        availablelevel:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: availableLevel
+    lifecycleCallbacks: {  }

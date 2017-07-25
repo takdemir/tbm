@@ -1,0 +1,87 @@
+AppBundle\Entity\Kurmus02:
+    type: entity
+    table: kurmus02
+    indexes:
+        idxRefNoMusteri:
+            columns:
+                - RefNoMusteri
+    uniqueConstraints:
+        RefNo:
+            columns:
+                - RefNo
+    id:
+        refno:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: RefNo
+            generator:
+                strategy: IDENTITY
+    fields:
+        yetkili:
+            type: string
+            nullable: true
+            length: 30
+            options:
+                fixed: false
+            column: Yetkili
+        departman:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+        gorev:
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: Gorev
+        dogumTarihi:
+            type: date
+            nullable: true
+            column: Dogum_tarihi
+        dahili:
+            type: string
+            nullable: true
+            length: 5
+            options:
+                fixed: false
+            column: Dahili
+        gsm:
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: GSM
+        email:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+            column: EMail
+        autoemail:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: H
+            column: AutoEMail
+    manyToOne:
+        refnomusteri:
+            targetEntity: Kurmus01
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                RefNoMusteri:
+                    referencedColumnName: RefNo_Musteri
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

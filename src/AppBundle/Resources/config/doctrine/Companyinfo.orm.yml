@@ -1,0 +1,107 @@
+AppBundle\Entity\Companyinfo:
+    type: entity
+    table: companyInfo
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        companyName:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: company_name
+        companyTel:
+            type: string
+            nullable: true
+            length: 11
+            options:
+                fixed: false
+            column: company_tel
+        companyEmail:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: company_email
+        companyAdres:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: company_adres
+        smsModul:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: sms_modul
+        smsUsername:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: sms_username
+        smsPassword:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: sms_password
+        smsSirketadi:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: sms_sirketadi
+        emailUsername:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: email_username
+        emailPassword:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: email_password
+        statikip:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+        section:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+        smsForCustomer:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '0'
+            column: sms_for_customer
+        systemactive:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '1'
+    lifecycleCallbacks: {  }

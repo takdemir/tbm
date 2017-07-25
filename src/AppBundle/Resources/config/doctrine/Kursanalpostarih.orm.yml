@@ -1,0 +1,48 @@
+AppBundle\Entity\Kursanalpostarih:
+    type: entity
+    table: kursanalpostarih
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        kurharid:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+        refnoMusteri:
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: RefNo_Musteri
+        islem:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+        para:
+            type: string
+            nullable: true
+            length: 30
+            options:
+                fixed: false
+        sonCari:
+            type: string
+            nullable: true
+            length: 30
+            options:
+                fixed: false
+            column: son_cari
+        tarih:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks: {  }

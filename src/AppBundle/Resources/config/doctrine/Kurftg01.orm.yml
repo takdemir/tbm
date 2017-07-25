@@ -1,0 +1,1750 @@
+AppBundle\Entity\Kurftg01:
+    type: entity
+    table: kurftg01
+    indexes:
+        Fiyat_No:
+            columns:
+                - Fiyat_No
+    id:
+        fiyatNo:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: Fiyat_No
+            generator:
+                strategy: IDENTITY
+    fields:
+        fiyatTanimi:
+            type: string
+            nullable: true
+            length: 30
+            options:
+                fixed: false
+            column: Fiyat_Tanimi
+        beklemeAboneTutariDk:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Bekleme_Abone_Tutari_Dk
+        beklemePesinTutariDk:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Bekleme_Pesin_Tutari_Dk
+        ucretsizAgirlikKgDm3:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Ucretsiz_Agirlik_Kg_Dm3
+        agirlikAboneTutariKgDm3:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Agirlik_Abone_Tutari_Kg_Dm3
+        agirlikPesinTutariKgDm3:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Agirlik_Pesin_Tutari_Kg_Dm3
+        minAboneDonusluTutari:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Min_Abone_Donuslu_Tutari
+        minPesinDonusluTutari:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Min_Pesin_Donuslu_Tutari
+        p0101:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_01_01
+        p0102:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_01_02
+        p0103:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_01_03
+        p0104:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_01_04
+        p0105:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_01_05
+        p0106:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_01_06
+        p0107:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_01_07
+        p0108:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_01_08
+        p0201:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_02_01
+        p0202:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_02_02
+        p0203:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_02_03
+        p0204:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_02_04
+        p0205:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_02_05
+        p0206:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_02_06
+        p0207:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_02_07
+        p0208:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_02_08
+        p0301:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_03_01
+        p0302:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_03_02
+        p0303:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_03_03
+        p0304:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_03_04
+        p0305:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_03_05
+        p0306:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_03_06
+        p0307:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_03_07
+        p0308:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_03_08
+        p0401:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_04_01
+        p0402:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_04_02
+        p0403:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_04_03
+        p0404:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_04_04
+        p0405:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_04_05
+        p0406:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_04_06
+        p0407:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_04_07
+        p0408:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_04_08
+        p0501:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_05_01
+        p0502:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_05_02
+        p0503:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_05_03
+        p0504:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_05_04
+        p0505:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_05_05
+        p0506:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_05_06
+        p0507:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_05_07
+        p0508:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_05_08
+        p0601:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_06_01
+        p0602:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_06_02
+        p0603:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_06_03
+        p0604:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_06_04
+        p0605:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_06_05
+        p0606:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_06_06
+        p0607:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_06_07
+        p0608:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_06_08
+        p0701:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_07_01
+        p0702:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_07_02
+        p0703:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_07_03
+        p0704:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_07_04
+        p0705:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_07_05
+        p0706:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_07_06
+        p0707:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_07_07
+        p0708:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_07_08
+        p0801:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_08_01
+        p0802:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_08_02
+        p0803:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_08_03
+        p0804:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_08_04
+        p0805:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_08_05
+        p0806:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_08_06
+        p0807:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_08_07
+        p0808:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: P_08_08
+        a0101:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_01_01
+        a0102:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_01_02
+        a0103:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_01_03
+        a0104:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_01_04
+        a0105:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_01_05
+        a0106:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_01_06
+        a0107:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_01_07
+        a0108:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_01_08
+        a0201:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_02_01
+        a0202:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_02_02
+        a0203:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_02_03
+        a0204:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_02_04
+        a0205:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_02_05
+        a0206:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_02_06
+        a0207:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_02_07
+        a0208:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_02_08
+        a0301:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_03_01
+        a0302:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_03_02
+        a0303:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_03_03
+        a0304:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_03_04
+        a0305:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_03_05
+        a0306:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_03_06
+        a0307:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_03_07
+        a0308:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_03_08
+        a0401:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_04_01
+        a0402:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_04_02
+        a0403:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_04_03
+        a0404:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_04_04
+        a0405:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_04_05
+        a0406:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_04_06
+        a0407:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_04_07
+        a0408:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_04_08
+        a0501:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_05_01
+        a0502:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_05_02
+        a0503:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_05_03
+        a0504:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_05_04
+        a0505:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_05_05
+        a0506:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_05_06
+        a0507:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_05_07
+        a0508:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_05_08
+        a0601:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_06_01
+        a0602:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_06_02
+        a0603:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_06_03
+        a0604:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_06_04
+        a0605:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_06_05
+        a0606:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_06_06
+        a0607:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_06_07
+        a0608:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_06_08
+        a0701:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_07_01
+        a0702:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_07_02
+        a0703:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_07_03
+        a0704:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_07_04
+        a0705:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_07_05
+        a0706:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_07_06
+        a0707:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_07_07
+        a0708:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_07_08
+        a0801:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_08_01
+        a0802:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_08_02
+        a0803:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_08_03
+        a0804:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_08_04
+        a0805:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_08_05
+        a0806:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_08_06
+        a0807:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: A_08_07
+        a0808:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_08_08
+        p0109:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_01_09
+        p01010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_01_010
+        p01011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_01_011
+        p0209:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_02_09
+        p02010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_02_010
+        p02011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_02_011
+        p0309:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_03_09
+        p03010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_03_010
+        p03011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_03_011
+        p0409:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_04_09
+        p04010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_04_010
+        p04011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_04_011
+        p0509:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_05_09
+        p05010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_05_010
+        p05011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_05_011
+        p0609:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_06_09
+        p06010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_06_010
+        p06011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_06_011
+        p0709:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_07_09
+        p07010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_07_010
+        p07011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_07_011
+        p0809:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_08_09
+        p08010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_08_010
+        p08011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_08_011
+        p0901:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_09_01
+        p0902:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_09_02
+        p0903:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_09_03
+        p0904:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_09_04
+        p0905:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_09_05
+        p0906:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_09_06
+        p0907:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_09_07
+        p0908:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_09_08
+        p0909:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_09_09
+        p09010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_09_010
+        p09011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_09_011
+        p01001:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_010_01
+        p01002:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_010_02
+        p01003:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_010_03
+        p01004:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_010_04
+        p01005:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_010_05
+        p01006:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_010_06
+        p01007:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_010_07
+        p01008:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_010_08
+        p01009:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_010_09
+        p010010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_010_010
+        p010011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_010_011
+        p01101:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_011_01
+        p01102:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_011_02
+        p01103:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_011_03
+        p01104:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_011_04
+        p01105:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_011_05
+        p01106:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_011_06
+        p01107:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_011_07
+        p01108:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_011_08
+        p01109:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_011_09
+        p011010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_011_010
+        p011011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: P_011_011
+        a0109:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_01_09
+        a01010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_01_010
+        a01011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_01_011
+        a0209:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_02_09
+        a02010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_02_010
+        a02011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_02_011
+        a0309:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_03_09
+        a03010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_03_010
+        a03011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_03_011
+        a0409:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_04_09
+        a04010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_04_010
+        a04011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_04_011
+        a0509:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_05_09
+        a05010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_05_010
+        a05011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_05_011
+        a0609:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_06_09
+        a06010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_06_010
+        a06011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_06_011
+        a0709:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_07_09
+        a07010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_07_010
+        a07011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_07_011
+        a0809:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_08_09
+        a08010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_08_010
+        a08011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_08_011
+        a0901:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_09_01
+        a0902:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_09_02
+        a0903:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_09_03
+        a0904:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_09_04
+        a0905:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_09_05
+        a0906:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_09_06
+        a0907:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_09_07
+        a0908:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_09_08
+        a0909:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_09_09
+        a09010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_09_010
+        a09011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_09_011
+        a01001:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_010_01
+        a01002:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_010_02
+        a01003:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_010_03
+        a01004:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_010_04
+        a01005:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_010_05
+        a01006:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_010_06
+        a01007:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_010_07
+        a01008:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_010_08
+        a01009:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_010_09
+        a010010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_010_010
+        a010011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_010_011
+        a01101:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_011_01
+        a01102:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_011_02
+        a01103:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_011_03
+        a01104:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_011_04
+        a01105:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_011_05
+        a01106:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_011_06
+        a01107:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_011_07
+        a01108:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_011_08
+        a01109:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_011_09
+        a011010:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_011_010
+        a011011:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: A_011_011
+    lifecycleCallbacks: {  }

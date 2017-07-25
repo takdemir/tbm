@@ -1,0 +1,28 @@
+AppBundle\Entity\Kurtip01:
+    type: entity
+    table: kurtip01
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        islemtipi:
+            type: string
+            nullable: false
+            length: 3
+            options:
+                fixed: false
+            column: islemTipi
+        islemtanimi:
+            type: string
+            nullable: false
+            length: 15
+            options:
+                fixed: false
+            column: islemTanimi
+    lifecycleCallbacks: {  }

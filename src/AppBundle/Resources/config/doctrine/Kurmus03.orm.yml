@@ -1,0 +1,24 @@
+AppBundle\Entity\Kurmus03:
+    type: entity
+    table: kurmus03
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        kim:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        kimle:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+    lifecycleCallbacks: {  }

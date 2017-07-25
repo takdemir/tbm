@@ -1,0 +1,43 @@
+AppBundle\Entity\Kursanalpos:
+    type: entity
+    table: kursanalpos
+    indexes:
+        pul-refnomusteri:
+            columns:
+                - RefNo_Musteri
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        cari:
+            type: string
+            nullable: false
+            length: 7
+            options:
+                fixed: false
+        toplam:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+        tarih:
+            type: datetime
+            nullable: true
+    manyToOne:
+        refnoMusteri:
+            targetEntity: Kurmus01
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                RefNo_Musteri:
+                    referencedColumnName: RefNo_Musteri
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

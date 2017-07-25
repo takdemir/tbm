@@ -1,0 +1,32 @@
+AppBundle\Entity\SmsEngel:
+    type: entity
+    table: sms_engel
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        baslangic:
+            type: string
+            nullable: true
+            length: 10
+            options:
+                fixed: false
+        bitis:
+            type: string
+            nullable: true
+            length: 10
+            options:
+                fixed: false
+        telefon:
+            type: string
+            nullable: true
+            length: 14
+            options:
+                fixed: false
+    lifecycleCallbacks: {  }

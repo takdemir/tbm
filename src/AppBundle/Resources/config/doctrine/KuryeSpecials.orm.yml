@@ -1,0 +1,40 @@
+AppBundle\Entity\KuryeSpecials:
+    type: entity
+    table: kurye_specials
+    indexes:
+        kuryeSpecials.kuryeId:
+            columns:
+                - kuryeId
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        date:
+            type: date
+            nullable: false
+        yoklamaStartDate:
+            type: datetime
+            nullable: false
+            column: yoklama_start_date
+        yoklamaFinishDate:
+            type: datetime
+            nullable: true
+            column: yoklama_finish_date
+    manyToOne:
+        kuryeid:
+            targetEntity: Kurye01
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                kuryeId:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

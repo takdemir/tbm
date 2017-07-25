@@ -1,0 +1,124 @@
+AppBundle\Entity\Kurye01:
+    type: entity
+    table: kurye01
+    repositoryClass: AppBundle\Repository\KuryeRepository
+    indexes:
+        Kurye_Adi:
+            columns:
+                - Kurye_Adi
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        kuryeNo:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: Kurye_No
+        kuryeAdi:
+            type: string
+            nullable: true
+            length: 30
+            options:
+                fixed: false
+            column: Kurye_Adi
+        adres:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+            column: Adres
+        semt:
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: Semt
+        telefon1:
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: Telefon_1
+        gsm:
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: GSM
+        eMail:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+            column: E_Mail
+        girisTarihi:
+            type: date
+            nullable: true
+            column: Giris_Tarihi
+        cikisTarihi:
+            type: date
+            nullable: true
+            column: Cikis_Tarihi
+        borc:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: Borc
+        alacak:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            options:
+                default: '0'
+            column: Alacak
+        personeltipi:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: D
+            column: PersonelTipi
+        durumu:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '7'
+            column: Durumu
+        sonIsGunu:
+            type: date
+            nullable: true
+            column: son_is_gunu
+        webUsername:
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: web_Username
+        webPassword:
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: web_Password
+    lifecycleCallbacks: {  }

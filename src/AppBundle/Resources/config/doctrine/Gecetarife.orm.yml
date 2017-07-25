@@ -1,0 +1,49 @@
+AppBundle\Entity\Gecetarife:
+    type: entity
+    table: gecetarife
+    id:
+        geceid:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        gecebir:
+            type: string
+            nullable: true
+            length: 5
+            options:
+                fixed: false
+                default: '1'
+        geceiki:
+            type: string
+            nullable: true
+            length: 5
+            options:
+                fixed: false
+                default: '2'
+        geceuc:
+            type: string
+            nullable: true
+            length: 5
+            options:
+                fixed: false
+                default: '3'
+        gecedort:
+            type: string
+            nullable: true
+            length: 5
+            options:
+                fixed: false
+                default: '4'
+        gecebes:
+            type: string
+            nullable: true
+            length: 5
+            options:
+                fixed: false
+                default: '5'
+    lifecycleCallbacks: {  }

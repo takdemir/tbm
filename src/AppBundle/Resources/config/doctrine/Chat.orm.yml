@@ -1,0 +1,60 @@
+AppBundle\Entity\Chat:
+    type: entity
+    table: chat
+    indexes:
+        refnomusteriler:
+            columns:
+                - RefNoMusteri
+        mustemChats:
+            columns:
+                - mustemID
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        sessionid:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: sessionID
+        message:
+            type: string
+            nullable: true
+            length: 1000
+            options:
+                fixed: false
+        owner:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+    manyToOne:
+        mustemid:
+            targetEntity: Admin
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                mustemID:
+                    referencedColumnName: id
+            orphanRemoval: false
+        refnomusteri:
+            targetEntity: Kurmus01
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                RefNoMusteri:
+                    referencedColumnName: RefNo_Musteri
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

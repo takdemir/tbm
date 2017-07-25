@@ -1,0 +1,47 @@
+AppBundle\Entity\Kuryeposition:
+    type: entity
+    table: kuryeposition
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        kuryeid:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: kuryeId
+        kuryeno:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: kuryeNo
+        latitude:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+        longitude:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+        cdate:
+            type: datetime
+            nullable: true
+        timestamp:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+    lifecycleCallbacks: {  }

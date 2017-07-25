@@ -1,0 +1,66 @@
+AppBundle\Entity\Kurgtp01:
+    type: entity
+    table: kurgtp01
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        gidisTipiNo:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: Gidis_Tipi_No
+        gidisTipiAdi:
+            type: string
+            nullable: true
+            length: 30
+            options:
+                fixed: false
+            column: Gidis_Tipi_Adi
+        renk:
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: Renk
+        katsayi:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Katsayi
+        donus:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: H
+            column: Donus
+        donusOrani:
+            type: boolean
+            nullable: true
+            column: Donus_Orani
+        ekspres:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: H
+            column: Ekspres
+        sureno:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: SureNo
+    lifecycleCallbacks: {  }

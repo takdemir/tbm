@@ -1,0 +1,57 @@
+AppBundle\Entity\Kursmt01:
+    type: entity
+    table: kursmt01
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        semt:
+            type: string
+            nullable: true
+            length: 20
+            options:
+                fixed: false
+            column: Semt
+        sehir:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: Sehir
+        bolgeNo:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: Bolge_No
+        e:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: E
+        ekstraAboneFiyatFarki:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Ekstra_Abone_Fiyat_Farki
+        ekstraPesinFiyatFarki:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Ekstra_Pesin_Fiyat_Farki
+        avrupaAnadolu:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: Avrupa_Anadolu
+    lifecycleCallbacks: {  }

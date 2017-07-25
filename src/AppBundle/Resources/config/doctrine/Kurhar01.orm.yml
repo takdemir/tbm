@@ -1,0 +1,368 @@
+AppBundle\Entity\Kurhar01:
+    type: entity
+    table: kurhar01
+    repositoryClass: AppBundle\Repository\KurharRepository
+    indexes:
+        f1:
+            columns:
+                - F1
+        f2:
+            columns:
+                - F2
+        f3:
+            columns:
+                - F3
+        gidis:
+            columns:
+                - Gidis_Tipi_Adi
+        kurye:
+            columns:
+                - Kurye_No
+        islem_tipi:
+            columns:
+                - Islem_Tipi
+        takas_kurye:
+            columns:
+                - Takas_RefNo_Kurye
+        alinan_kurye:
+            columns:
+                - Alinan_Kurye_No
+        verilen_kurye:
+            columns:
+                - Verilen_Kurye_No
+    uniqueConstraints:
+        RefNo_Kayit:
+            columns:
+                - id
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        iptal:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: H
+            column: Iptal
+        f2Fake:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+                default: '0'
+            column: F2_Fake
+        islemTarihi:
+            type: datetime
+            nullable: true
+            column: Islem_Tarihi
+        kayitTarihi:
+            type: datetime
+            nullable: true
+            column: Kayit_Tarihi
+        masadaBeklemeSuresi:
+            type: string
+            nullable: true
+            length: 11
+            options:
+                fixed: false
+            column: Masada_Bekleme_Suresi
+        isAlimSaati:
+            type: datetime
+            nullable: true
+            column: is_alim_saati
+        takas:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: H
+            column: Takas
+        takasBilgisi:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+            column: Takas_Bilgisi
+        okumaSaati:
+            type: datetime
+            nullable: true
+            column: Okuma_Saati
+        alimSaati:
+            type: datetime
+            nullable: true
+            column: Alim_Saati
+        teslimSaati:
+            type: datetime
+            nullable: true
+            column: Teslim_Saati
+        baslangicBeklemeSaati:
+            type: datetime
+            nullable: true
+            column: Baslangic_Bekleme_Saati
+        bitisBeklemeSaati:
+            type: datetime
+            nullable: true
+            column: Bitis_Bekleme_Saati
+        istenenAlimSaati:
+            type: datetime
+            nullable: true
+            column: Istenen_Alim_Saati
+        istenenTeslimSaati:
+            type: datetime
+            nullable: true
+            column: Istenen_Teslim_Saati
+        odeme:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: Odeme
+        toplamFiyat:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Toplam_Fiyat
+        tutar:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Tutar
+        beklemeTutari:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Bekleme_Tutari
+        gonderiAgirligi:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: Gonderi_Agirligi
+        agirlikTutari:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Agirlik_Tutari
+        teslimAlan:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+            column: Teslim_Alan
+        teslimEdilenFirma:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+            column: Teslim_Edilen_Firma
+        takasZamani:
+            type: datetime
+            nullable: true
+            column: Takas_Zamani
+        beklemeKontrol:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: H
+            column: Bekleme_Kontrol
+        mailKontrol:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: H
+            column: Mail_Kontrol
+        kgfno:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: KGFNo
+        beklemeSuresi:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: Bekleme_Suresi
+        odemeAlindi:
+            type: string
+            nullable: true
+            length: 1
+            options:
+                fixed: true
+                default: H
+            column: Odeme_Alindi
+        webUsername:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+            column: Web_UserName
+        siralama:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+        eksure:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+        evrakHazirSaati:
+            type: datetime
+            nullable: true
+            column: evrak_hazir_saati
+        kuryeGordumu:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '0'
+            column: kurye_gordumu
+        kaydiAlan:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+            column: kaydi_alan
+        isCustomer:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '0'
+            column: is_customer
+        alimSaatiExist:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '0'
+            column: alim_saati_exist
+        notExist:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '0'
+            column: not_exist
+        musteriIptalmi:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '0'
+            column: musteri_iptalmi
+    manyToOne:
+        alinanKuryeNo:
+            targetEntity: Kurye01
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                Alinan_Kurye_No:
+                    referencedColumnName: id
+            orphanRemoval: false
+        f1:
+            targetEntity: F1
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                F1:
+                    referencedColumnName: id
+            orphanRemoval: false
+        f2:
+            targetEntity: F2
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                F2:
+                    referencedColumnName: id
+            orphanRemoval: false
+        f3:
+            targetEntity: F3
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                F3:
+                    referencedColumnName: id
+            orphanRemoval: false
+        gidisTipiAdi:
+            targetEntity: Kurgtp01
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                Gidis_Tipi_Adi:
+                    referencedColumnName: id
+            orphanRemoval: false
+        islemTipi:
+            targetEntity: Kurtip01
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                Islem_Tipi:
+                    referencedColumnName: id
+            orphanRemoval: false
+        kuryeNo:
+            targetEntity: Kurye01
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                Kurye_No:
+                    referencedColumnName: id
+            orphanRemoval: false
+        takasRefnoKurye:
+            targetEntity: Kurye01
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                Takas_RefNo_Kurye:
+                    referencedColumnName: id
+            orphanRemoval: false
+        verilenKuryeNo:
+            targetEntity: Kurye01
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                Verilen_Kurye_No:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

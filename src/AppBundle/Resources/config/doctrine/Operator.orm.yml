@@ -1,0 +1,101 @@
+AppBundle\Entity\Operator:
+    type: entity
+    table: operator
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        kadi:
+            type: string
+            nullable: true
+            length: 35
+            options:
+                fixed: false
+        sifre:
+            type: string
+            nullable: true
+            length: 35
+            options:
+                fixed: false
+        adisoyadi:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+        telefon1:
+            type: string
+            nullable: true
+            length: 15
+            options:
+                fixed: false
+        telefon2:
+            type: string
+            nullable: true
+            length: 15
+            options:
+                fixed: false
+        telefon3:
+            type: string
+            nullable: true
+            length: 15
+            options:
+                fixed: false
+        adres:
+            type: string
+            nullable: true
+            length: 300
+            options:
+                fixed: false
+        semt:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+        email:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+        cikistarihi:
+            type: date
+            nullable: true
+        kayitver:
+            type: string
+            nullable: true
+            length: 2
+            options:
+                fixed: false
+        fiyathesapla:
+            type: string
+            nullable: true
+            length: 2
+            options:
+                fixed: false
+        ayarlar:
+            type: string
+            nullable: true
+            length: 2
+            options:
+                fixed: false
+        kurmusekle:
+            type: string
+            nullable: true
+            length: 2
+            options:
+                fixed: false
+        arsiv:
+            type: string
+            nullable: true
+            length: 2
+            options:
+                fixed: false
+    lifecycleCallbacks: {  }

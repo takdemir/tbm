@@ -1,0 +1,56 @@
+AppBundle\Entity\Excel:
+    type: entity
+    table: excel
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        kgf:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '1'
+        gidistipi:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '1'
+        alimsaati:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '1'
+        teslimsaati:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '1'
+        islemtipi:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '1'
+        odemeyapan:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '1'
+        kuryenu:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+                default: '1'
+    lifecycleCallbacks: {  }

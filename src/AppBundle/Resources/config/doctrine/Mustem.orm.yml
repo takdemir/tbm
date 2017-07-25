@@ -1,0 +1,83 @@
+AppBundle\Entity\Mustem:
+    type: entity
+    table: mustem
+    id:
+        mustemid:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        adisoyadi:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+        telefon:
+            type: string
+            nullable: true
+            length: 15
+            options:
+                fixed: false
+        email:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+        kadi:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+        sifre:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+        kayitver:
+            type: string
+            nullable: true
+            length: 2
+            options:
+                fixed: false
+        fiyathesapla:
+            type: string
+            nullable: true
+            length: 2
+            options:
+                fixed: false
+        kurmusekle:
+            type: string
+            nullable: true
+            length: 2
+            options:
+                fixed: false
+        arsiv:
+            type: string
+            nullable: true
+            length: 2
+            options:
+                fixed: false
+        chat:
+            type: string
+            nullable: true
+            length: 2
+            options:
+                fixed: false
+        ayarlar:
+            type: string
+            nullable: true
+            length: 2
+            options:
+                fixed: false
+        cikistarihi:
+            type: date
+            nullable: true
+    lifecycleCallbacks: {  }

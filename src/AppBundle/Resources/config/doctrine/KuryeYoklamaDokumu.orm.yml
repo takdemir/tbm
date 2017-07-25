@@ -1,0 +1,55 @@
+AppBundle\Entity\KuryeYoklamaDokumu:
+    type: entity
+    table: kurye_yoklama_dokumu
+    indexes:
+        kuryeYoklama:
+            columns:
+                - kuryeId
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        totalearn:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            column: totalEarn
+        learn:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            column: LEarn
+        givenearn:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            column: givenEarn
+        examination:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        date:
+            type: date
+            nullable: false
+    manyToOne:
+        kuryeid:
+            targetEntity: Kurye01
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                kuryeId:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
