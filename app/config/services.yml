@@ -43,6 +43,11 @@ services:
             public: true
             arguments:
               $debug: '%kernel.debug%'
+              
+    AppBundle\Twig\TwigFunctions:
+            public: true
+            tags:
+              - {name: twig.extension}
 
     AppBundle\EventListener\Exceptionlistener:
           public: true
