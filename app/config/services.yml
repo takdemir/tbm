@@ -37,24 +37,26 @@ services:
     AppBundle\Service\CommonService:
       public: true
       arguments:
+        - '@doctrine.orm.entity_manager'
         - '@session'
+        - '@security.authorization_checker'
 
     AppBundle\Controller\MyExceptionController:
-            public: true
-            arguments:
-              $debug: '%kernel.debug%'
-              
+      public: true
+      arguments:
+        $debug: '%kernel.debug%'
+
     AppBundle\Twig\TwigFunctions:
-            public: true
-            tags:
-              - {name: twig.extension}
+      public: true
+      tags:
+        - {name: twig.extension}
 
     AppBundle\EventListener\Exceptionlistener:
-          public: true
-          tags:
-            - {name: kernel.event_listener, event: kernel.exception}
+      public: true
+      tags:
+        - {name: kernel.event_listener, event: kernel.exception}
 
     AppBundle\EventListener\RequestListener:
-                public: true
-                tags:
-                  - {name: kernel.event_listener, event: kernel.request}
+      public: true
+      tags:
+        - {name: kernel.event_listener, event: kernel.request}

@@ -11,7 +11,7 @@ class SecurityController extends Controller
 
     public function loginAction(Request $request){
 
-        $cs=$this->get(CommonService::class);
+
         
         // Şu andan itibaren userAuthanticationProvider.php de bulunan provider devreye girip UserInterface den kalıtım alan entity mizi serialize ediyor.
         $authenticationUtils = $this->get('security.authentication_utils');
@@ -20,8 +20,10 @@ class SecurityController extends Controller
         // get the login error if there is one
         $error = $authenticationUtils->getLastAuthenticationError();
 
+        $cs=$this->get(CommonService::class);
         if($error){
-            $cs->setMessage('error','Lütfen kullanıcıadı ve şifrenizi kontrol ediniz!');
+            //$cs->printR($error->getMessage());
+            $cs->setPopUpMessage('error','Lütfen kullanıcıadı ve şifrenizi kontrol ediniz!');
         }
 
         // last username entered by the user

@@ -14,3 +14,12 @@ login:
 logout:
   path: /logout
   defaults: {_controller: AppBundle:Security:logout}
+
+
+
+
+# AjaxController
+
+getcurrentdetails:
+  path: /getcurrentdaydetails
+  defaults: {_controller: AppBundle:AjaxFirst:getcurrentdaydetails}

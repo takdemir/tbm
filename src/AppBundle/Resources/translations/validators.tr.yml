@@ -1,0 +1,13 @@
+admin.name.not_blank: Lütfen adınızı soyadınızı boş bırakmayınız
+admin.name.max_length: Adınız soyadınız 35 karakterden fazla olamaz
+admin.name.min_length: Adınız soyadınız 2 karakterden az olamaz
+admin.username.not_blank: Lütfen kullanıcı adınızı boş bırakmayınız
+admin.username.max_length: Kullanıcıadınız 35 karakterden fazla olamaz
+admin.username.min_length: Kullanıcıadınız 4 karakterden az olamaz
+admin.password.not_blank: Lütfen şifrenizi boş bırakmayınız
+admin.password.needed: Şifreniz en az 8 en fazla 20 karakter içermeli ve şifrenizde en az 1 büyük harf,1 küçük harf, 1 sayı ve 1 karakter olmalıdır (Örn - Abcdef1*)
+admin.phone.needed: Lütfen geçerli telefon numarası giriniz
+admin.internalphone.needed: Lütfen geçerli dahili numara giriniz
+admin.individual.email: Lütfen geçerli bir email giriniz!
+admin.company.email: Lütfen geçerli bir email giriniz!
+admin.statu.message: Lütfen geçerli bir değer giriniz!

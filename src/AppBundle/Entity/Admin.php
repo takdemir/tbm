@@ -1,11 +1,13 @@
 <?php
 
 namespace AppBundle\Entity;
+use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Admin
  */
-class Admin
+class Admin implements UserInterface, \Serializable
 {
     /**
      * @var integer
@@ -19,16 +21,25 @@ class Admin
 
     /**
      * @var string
+     * @Assert\NotBlank(message="admin.name.not_blank")
+     * @Assert\Length(max="35",min="2",maxMessage="admin.name.max_length",minMessage="admin.name.min_length")
      */
     private $name;
 
     /**
      * @var string
+     * @Assert\NotBlank(message="admin.username.not_blank")
+     * @Assert\Length(max="35",min="4",maxMessage="admin.username.max_length",minMessage="admin.username.min_length")
      */
     private $username;
 
     /**
      * @var string
+     * @Assert\Regex(
+     *     pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).{8,20}$/",
+     *     match=true,
+     *     message="admin.password.needed"
+     * )
      */
     private $password;
 
@@ -199,7 +210,7 @@ class Admin
      */
     public function getRoles()
     {
-        return $this->roles;
+        return array($this->roles);
     }
 
     /**
@@ -224,6 +235,26 @@ class Admin
     public function getStatu()
     {
         return $this->statu;
+    }
+
+    public function serialize()
+    {
+        return serialize(array($this->id,$this->name,$this->username,$this->roles));
+    }
+
+    public function unserialize($serialized)
+    {
+        list($this->id,$this->name,$this->username,$this->roles)=unserialize($serialized);
+    }
+
+    public function getSalt()
+    {
+        return null;
+    }
+
+    public function eraseCredentials()
+    {
+        // TODO: Implement eraseCredentials() method.
     }
 }
 

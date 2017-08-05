@@ -35,11 +35,12 @@ security:
     access_control: # Access_control security.token_storage a bakıyor ve role kontrolü yapıyor. Eğer roller belirtilenler ile uyuşmuyorsa otomatik olarak firewall da ki /login e yönlendiriyor. Eğer uyuşuyorsa bu seferde path role ile token_storage rolü uyumlumu nakıyor. Değilse AccessDeniedException fırlatıyor.
             - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY } # Bu kısım çok önemli. Eğer bu şekilde olmazsa kesinlikle loop a girer
             - { path: ^/signup, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-            - { path: ^/, roles: [ROLE_CUSTOMER] }
+            - { path: ^/, roles: [ROLE_MUSTERI] }
             #- { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY, ips: [127.0.0.1] } # Bunun sayesinde eğer user ın ip si belirtilen ip ile uyuyşmazsa, bir alta inmek zorunda kalıyor ve orada da role uymadığı için AccesDeniedException atmasını sağlıyor.
             #- { path: ^/, roles: ROLE_NO_ACCESS } # Bunun sayesinde eğer user ın ip si belirtilen ip ile uyuyşmazsa, bir alta inmek zorunda kalıyor ve orada da role uymadığı için AccesDeniedException atmasını sağlıyor.
 
     role_hierarchy:
-            ROLE_USER:       [ROLE_CUSTOMER, ROLE_OPERATOR]
-            ROLE_ADMIN:      [ROLE_ORGANIZER, ROLE_USER]
+            ROLE_OPERATOR:   [ROLE_MUSTERI]
+            ROLE_USER:       [ROLE_OPERATOR]
+            ROLE_ADMIN:      [ROLE_USER]
             ROLE_SUPERADMIN: [ROLE_ADMIN]
